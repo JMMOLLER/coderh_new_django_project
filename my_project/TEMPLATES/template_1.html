@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=bootstrap.min.css>
+</head>
+<body>
+    <center><h1 class="text-center"><font face="verdana">Miembros de la familia</font></h1><br></center>
+    {%for datos in miembro_familia%}
+        <b><font size=4 face="courier new">Nombre:</font></b> {{datos.full_name}}</p>
+        <b><font size=4 face="courier new">DNI:</font></b> {{datos.DNI}}<p>
+        <b><font size=4 face="courier new">Nacimiento:</font></b> {{datos.nacimiento}}<br><hr>
+    {%endfor%}
+    <div align="right">Usted realizó la busqueda el {{fecha_actual}}</div>
+</body>
+</html>
